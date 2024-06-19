@@ -1,0 +1,20 @@
+#UPS
+
+# Sender
+senderFullName: "Jack Sparrow"
+senderEmail: "jack@mail.com"
+senderPhone: "6504566789"
+senderStreetAddress: "20800 Homestead Rd"
+senderCityName: "Cupertino"
+senderState: "CA"
+senderZip: "95014"
+
+
+# Recipient
+recipientCountry: " United Kingdom "
+recipientFullName: "Hector Barbossa"
+recipientStreetAddress: "24 Ash Avenue"
+recipientCityName: "London"
+recipientEmail: "hector@mail.com"
+recipientPhone: "4555676767"
+recipientPostalCode: "SE17 1HS"
