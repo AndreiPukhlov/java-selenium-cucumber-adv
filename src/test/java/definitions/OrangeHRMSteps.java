@@ -13,7 +13,7 @@ public class OrangeHRMSteps {
     @Given("user is on the OrangeHRM home page")
     public void userIsOnTheOrangeHRMHomePage() {
         new OrangeSignInPage().openPage();
-
+        assertThat(new OrangeVerifications().getPageTitle()).isEqualTo("OrangeHRM");
     }
 
     @When("they with provided user name and password for admin account")
@@ -34,6 +34,6 @@ public class OrangeHRMSteps {
 
     @Then("they logged in to the account")
     public void theyLoggedInToTheAccount() {
-        assertThat(new OrangeVerifications().getPageTitle()).isEqualTo("Dashboard");
+        assertThat(new OrangeVerifications().getHomePageTitle()).isEqualTo("Dashboard");
     }
 }
