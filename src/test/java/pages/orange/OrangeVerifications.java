@@ -3,6 +3,7 @@ package pages.orange;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import pages.Page;
+import support.TestContext;
 
 public class OrangeVerifications extends Page {
 
@@ -14,7 +15,11 @@ public class OrangeVerifications extends Page {
 
 
 
-    public String getPageTitle(){
+    public String getHomePageTitle(){
         return dashBoardTitle.getText();
+    }
+
+    public String getPageTitle(){
+        return TestContext.getDriver().getTitle();
     }
 }
