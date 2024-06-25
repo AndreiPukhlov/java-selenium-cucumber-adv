@@ -16,8 +16,8 @@ public class OrangeHRMSteps {
         assertThat(new OrangeVerifications().getPageTitle()).isEqualTo("OrangeHRM");
     }
 
-    @When("they with provided user name and password for admin account")
-    public void theyWithProvidedUserNameAndPasswordForAdminAccount() {
+    @When("they attempt tp login with provided user name and password for admin account")
+    public void loginAttemptWithProvidedUserNameAndPasswordForAdminAccount() {
         OrangeSignInPage orangeSignInPage = new OrangeSignInPage();
         String adminUserName = orangeSignInPage.getAdminUserName();
         int colonIndex = adminUserName.indexOf(':');
@@ -32,7 +32,7 @@ public class OrangeHRMSteps {
         orangeSignInPage.clickLoginButton();
     }
 
-    @Then("they logged in to the account")
+    @Then("they landed on the Dashboard page as logged in admin")
     public void theyLoggedInToTheAccount() {
         assertThat(new OrangeVerifications().getHomePageTitle()).isEqualTo("Dashboard");
     }
