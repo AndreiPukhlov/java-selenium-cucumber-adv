@@ -58,6 +58,4 @@ public class GoogleSteps {
     public void theSearchResultForIsDisplayed(String searchResultName) {
         assertThat(new GooglePageVerifications().getSearchResultText()).contains(searchResultName);
     }
-
-    ;
 }

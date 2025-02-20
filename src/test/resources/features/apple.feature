@@ -7,4 +7,4 @@
 	  When they navigates to the Mac section
 	  And they chooses to explore all macs
 	  And they chooses "iMac"
-	  Then the "uMac" product page is displayed
+	  Then the "iMac" product page is displayed

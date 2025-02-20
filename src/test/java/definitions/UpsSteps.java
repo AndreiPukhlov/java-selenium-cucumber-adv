@@ -39,7 +39,7 @@ public class UpsSteps {
     }
 
     @And("they fills all the required fields for the recipient")
-    public void theyFillsAllTheRequiredFieldsForTheRecipient() {
+    public void theyFillsAllTheRequiredFieldsForTheRecipient() throws InterruptedException {
         UpsShipmentPage upsShipmentPage = new UpsShipmentPage();
         upsShipmentPage.clickRecipientCountryDropdown();
         upsShipmentPage.selectRecipientCountry();
