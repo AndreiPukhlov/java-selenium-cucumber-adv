@@ -26,12 +26,12 @@ public class YahooPageSteps extends Page {
     }
 
     @And("they chooses Weather")
-    public void theyChoosesWeather() throws InterruptedException {
+    public void theyChoosesWeather()  {
         new YahooHeaderPage().clickOnWeather();
     }
 
     @And("they chooses to find location by {string} and chooses {string} from the search result")
-    public void theyChoosesToChangeLocation(String cityOrZip, String cityName) throws InterruptedException {
+    public void theyChoosesToChangeLocation(String cityOrZip, String cityName) {
         YahooWeatherPage yahooWeatherPage = new YahooWeatherPage();
         yahooWeatherPage.clickChangeLocation();
         yahooWeatherPage.enterCityOrZipCode(cityOrZip);
